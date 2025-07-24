@@ -140,6 +140,33 @@
       color: #fff;
     }
 
+    @media (max-width: 768px) {
+      .header-inner,
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .main-nav {
+        justify-content: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+        margin-top: 1rem;
+      }
+    }
+
+    .site-header,
+    .site-footer {
+      animation: fadeIn 1s ease-out both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
   </style>
 </head>
 <body>
