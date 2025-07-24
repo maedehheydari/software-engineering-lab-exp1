@@ -66,17 +66,122 @@
       font-size: 0.9rem;
       margin-top: 2rem;
     }
+
+    .header-inner,
+    .footer-inner {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 2rem;
+      margin: 1rem 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner {
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .site-header {
+      background: linear-gradient(to right, #0066ff, #3399ff);
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    .main-nav a:hover {
+      color: #ffe100;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+
+    .site-footer {
+      background: #222;
+      color: #eee;
+      padding: 3rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .header-inner,
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .main-nav {
+        justify-content: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+        margin-top: 1rem;
+      }
+    }
+
+    .site-header,
+    .site-footer {
+      animation: fadeIn 1s ease-out both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Static Frontend Project</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="#">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">🌐 MyTeam</div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="tagline">Empowering static web development 🚀</div>
+    </div>
   </header>
 
   <section class="hero">
@@ -88,8 +193,18 @@
     <p>This is a fully static page created as part of a GitHub-based frontend project. The goal is to design, version control, and deploy the site using Git, GitHub, and GitHub Actions. The page is designed to be clean, responsive, and easy to maintain.</p>
   </section>
 
-  <footer>
-    © 2025 Static Page Project | Designed by Team
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-info">
+        <h3>Static Page Project</h3>
+        <p>Created by our amazing team of developers.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
   </footer>
 
 </body>
