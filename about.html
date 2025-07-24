@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About - Our Team</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            color: #333;
+        }
+
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?team,collaboration') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 1px 1px 5px black;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            max-width: 80%;
+        }
+
+        .about {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .about h2 {
+            margin-bottom: 1rem;
+            color: #4a90e2;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .team-members {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .team-members h3 {
+            color: #4a90e2;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .member-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .member-list li {
+            background: white;
+            margin: 1rem 0;
+            padding: 1rem 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .member-list li::before {
+            content: "👤 ";
+            margin-right: 0.5rem;
+        }
+
+        footer {
+            background: #f0f0f0;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Static Frontend Project</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Meet Our Team</h1>
+</section>
+
+<section class="about">
+    <h2>About Our Team</h2>
+    <p>We are a dedicated team of students working together on this software lab assignment. Our goal is to create a well-designed, functional website while learning about version control, collaboration, and web deployment using modern tools and technologies.</p>
+
+    <div class="team-members">
+        <h3>Team Members</h3>
+        <ul class="member-list">
+            <li>Sepehr Vahedi</li>
+            <li>Maedeh Heidari</li>
+            <li>Mohammad Mahdi Akbar</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    © 2025 Static Page Project | Designed by Team
+</footer>
+
+</body>
+</html>
